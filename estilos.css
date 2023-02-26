@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(212, 53, 53);
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, rgb(212, 53, 53), rgb(239, 41, 81));
+}
+.navbar .navbar-brand {
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+.navbar .navbar-brand span {
+  color: rgb(112, 227, 227);
+}
+.navbar .nav-link {
+  color: whitesmoke;
+  font: "Oswald", sans-serif;
+}
+.navbar .navbar-toggler i {
+  color: whitesmoke;
+}
+.navbar .nav-link:hover {
+  color: rgb(49, 46, 46);
+  border-radius: 5px;
+}
+.navbar .nav-item:hover {
+  background-color: rgb(212, 53, 53);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.jumbotron {
+  height: calc(100vh - 150px);
+  background-color: rgb(212, 53, 53);
+  background-image: url(img/legofondo.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: azure;
+  text-align: end;
+  border-radius: 0%;
+  margin-bottom: 0%;
+}
+.jumbotron .intron {
+  color: white;
+  width: auto;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.575);
+  border: 3px solid red;
+  padding: 35px;
+  font-family: "Oswald", sans-serif;
+}
+.jumbotron .intron a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: rgb(212, 53, 53);
+  padding: 7px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.jumbotron .intron a:hover {
+  color: rgb(49, 46, 46);
+  text-decoration: none;
+  border: 2px solid red;
+}
+
+.carousel-item {
+  height: 400px;
+}
+.carousel-item .carousel-caption {
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+.carousel-item .carousel-caption h3 {
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(212, 53, 53);
+  background-image: linear-gradient(to right, rgb(212, 53, 53), rgb(239, 41, 81));
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.titulo-juego {
+  background-color: rgb(212, 53, 53);
+  background-image: linear-gradient(to right, rgb(212, 53, 53), rgb(239, 41, 81));
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  padding: 20PX;
+}
+.titulo-juego h3 {
+  text-align: center;
+}
+.titulo-juego a {
+  color: whitesmoke;
+  background-color: rgb(49, 46, 46);
+  border: 1px solid red;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.titulo-juego a:hover {
+  background-color: rgb(212, 53, 53);
+  border: 2px solid rgb(49, 46, 46);
+  color: rgb(49, 46, 46);
+  border-radius: 5px;
+}
+
+h3::selection {
+  background-color: white;
+  color: rgb(212, 53, 53);
+}
+
+p::selection {
+  background-color: white;
+  color: rgb(212, 53, 53);
+}
+
+.img-juego {
+  background-color: rgb(212, 53, 53);
+  background-image: url(img/toymanonene.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.img2 {
+  background-image: url(img/chess.jpeg);
+}
+
+.img3 {
+  background-image: url(img/legofondo.jpeg);
+}
+
+h4 {
+  text-align: center;
+  background-color: rgb(212, 53, 53);
+  background-image: linear-gradient(to right, rgb(212, 53, 53), rgb(239, 41, 81));
+  border: 5px solid rgb(43, 43, 191);
+}
+
+footer {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(43, 43, 191);
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
+footer p {
+  margin-bottom: 15px;
+}
+footer i {
+  font-size: 50px;
+  letter-spacing: 20px;
+  color: rgb(212, 53, 53);
+}
+
+.subir {
+  height: 10px;
+  width: 10px;
+  color: whitesmoke;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.contenedor {
+  min-height: 600px;
+  width: 100%;
+  background-color: rgb(212, 53, 53);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 300px);
+  padding: 10px;
+}
+
+.item {
+  border: 1px solid red;
+  background-image: url(img/toymanonene.jpeg);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item:hover {
+  transition: all 0.9s;
+  background-size: 125%;
+}
+
+.item1 {
+  background-color: #b22121;
+  background-image: url(img/img1.jpeg);
+}
+
+.item2 {
+  background-color: #d82e2e;
+  background-image: url(img/img2.jpeg);
+}
+
+.item3 {
+  background-color: #e05959;
+  background-image: url(img/img3.jpeg);
+}
+
+.item4 {
+  background-color: #bd1b1b;
+  background-image: url(img/img4.jpeg);
+}
+
+.item5 {
+  background-color: #d41e1e;
+  background-image: url(img/img5.jpeg);
+}
+
+.item6 {
+  background-color: #e12a2a;
+  background-image: url(img/img6.jpeg);
+}
+
+.item7 {
+  background-color: #eb5a5a;
+  background-image: url(img/img7.jpeg);
+  filter: hue-rotate(200deg);
+}
+
+.item8 {
+  background-color: #ed7171;
+  background-image: url(img/img8.jpeg);
+  filter: hue-rotate(200deg);
+}
+
+.item9 {
+  background-color: #f08787;
+  background-image: url(img/img9.jpeg);
+  filter: hue-rotate(200deg);
+}
+
+/*# sourceMappingURL=estilos.css.map */

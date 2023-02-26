@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+$font1: 'Oswald', sans-serif;
+$color1: rgb(212, 53, 53);
+$color2: whitesmoke;
+$color3: rgb(49, 46, 46);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: $color1;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right,rgb(212, 53, 53), rgb(239, 41, 81));
+    .navbar-brand {
+        color: $color2;
+        font-family: $font1;
+        font-size: x-large;
+        font-weight: bold;
+        span {
+            color: rgb(112, 227, 227);
+        }
+    }
+    .nav-link {
+        color: $color2;
+        font: $font1;
+    }
+
+    .navbar-toggler i {
+        color: $color2;
+    }
+    
+    .nav-link:hover{
+        color: $color3;
+        border-radius: 5px;
+    }
+    .nav-item:hover{
+        background-color:$color1;
+        text-decoration: none;
+        border-radius: 4px; 
+    }  
+    
+}
+
+
+.jumbotron{
+    height: calc(100vh - 150px);
+    background-color: $color1;
+    background-image: url(img/legofondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: azure;
+    text-align: end;
+    border-radius: 0% ;
+    margin-bottom: 0%;
+
+    .intron{
+        color: white;
+        width: auto;
+        float: right;
+        background-color: rgba(0, 0, 0, 0.575);
+        border: 3px solid red;
+        padding: 35px;
+        font-family: $font1;
+
+        a{
+            text-decoration: none;
+            color: $color2;
+            background-color:$color1;
+            padding: 7px;
+            border-radius: 5px;
+            text-transform: capitalize;
+        }
+        a:hover {
+            color: $color3;
+            text-decoration: none;
+            border: 2px solid red;
+        }
+        
+    }
+}
+
+.carousel-item {
+    height: 400px;
+
+    .carousel-caption{
+        font-family: $font1;
+        color: black;
+    
+        h3{
+            text-transform: capitalize;
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+    background-color: $color1;
+    background-image: linear-gradient(to right,rgb(212, 53, 53), rgb(239, 41, 81));
+    color: $color2;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+
+.titulo-juego{
+    background-color: $color1;
+    background-image: linear-gradient(to right,rgb(212, 53, 53), rgb(239, 41, 81));
+    color: $color2;
+    text-transform: capitalize;
+    font-family: $font1;
+    padding: 20PX;
+
+    h3{
+        text-align: center;
+    }
+
+    a{
+        color: whitesmoke;
+        background-color:$color3;
+        border: 1px solid red;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: $color1 ; 
+        border: 2px solid $color3;
+        color: $color3;
+        border-radius: 5px;
+    }
+    
+}
+
+h3::selection{
+    background-color: white;
+    color:$color1 ;
+}
+p::selection{
+    background-color: white;
+    color:$color1;
+}
+
+.img-juego{
+    background-color: $color1;
+    background-image: url(img/toymanonene.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.img2{
+    background-image: url(img/chess.jpeg);
+}
+.img3{ 
+    background-image: url(img/legofondo.jpeg);
+}
+
+h4{
+    text-align: center;
+    background-color: $color1;
+    background-image: linear-gradient(to right,rgb(212, 53, 53), rgb(239, 41, 81));
+    border: 5px solid rgb(43, 43, 191);
+
+}
+
+footer {
+    text-align: center;
+    font-size: 30px; 
+    background-color: rgb(43, 43, 191);
+    color: $color2;
+    font-family:$font1;
+    text-decoration: none;
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    i {
+        font-size: 50px;
+        letter-spacing: 20px;
+        color: $color1;
+    }
+} 
+
+
+.subir {
+    height: 10px;
+    width: 10px;
+    color: $color2;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.contenedor{
+    min-height: 600px;
+    width: 100%;
+    background-color: $color1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 300px);
+    padding: 10px;
+}
+.item{
+    border: 1px solid red;
+    background-image: url(img/toymanonene.jpeg);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item:hover{
+    transition: all 0.9s;
+    background-size: 125%;
+}
+
+$micolor1: rgb(135, 25, 25);
+$micolor2: rgb(100, 14, 14);
+$micolor3: rgb(130, 16, 16);
+
+@mixin hue-rotate($grados){
+    filter:hue-rotate($grados)
+}
+
+@for $i from 1 through 3 {
+    .item#{$i} {
+        background-color: lighten($micolor1, $i * 10%);
+        background-image: url(img/img#{$i}.jpeg);
+    }
+}
+
+@for $i from 4 through 6 {
+    .item#{$i} {
+        background-color: lighten($micolor2, $i * 5%);
+        background-image: url(img/img#{$i}.jpeg);
+    }
+}
+
+@for $i from 7 through 9 {
+    .item#{$i} {
+        background-color: lighten($micolor3, $i * 5%);
+        background-image: url(img/img#{$i}.jpeg);
+        @include hue-rotate(200deg);
+    }
+}
