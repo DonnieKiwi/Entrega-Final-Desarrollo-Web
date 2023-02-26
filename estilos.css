@@ -153,6 +153,23 @@ h4 {
   border: 5px solid rgb(43, 43, 191);
 }
 
+.galeria p {
+  font-family: "Oswald", sans-serif;
+}
+.galeria a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: rgb(212, 53, 53);
+  padding: 3px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.galeria a:hover {
+  color: rgb(49, 46, 46);
+  text-decoration: none;
+  border: 2px solid red;
+}
+
 footer {
   text-align: center;
   font-size: 30px;
@@ -182,16 +199,6 @@ footer i {
   line-height: 40px;
 }
 
-.contenedor {
-  min-height: 600px;
-  width: 100%;
-  background-color: rgb(212, 53, 53);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 300px);
-  padding: 10px;
-}
-
 .item {
   border: 1px solid red;
   background-image: url(img/toymanonene.jpeg);
@@ -203,54 +210,6 @@ footer i {
 .item:hover {
   transition: all 0.9s;
   background-size: 125%;
-}
-
-.item1 {
-  background-color: #b22121;
-  background-image: url(img/img1.jpeg);
-}
-
-.item2 {
-  background-color: #d82e2e;
-  background-image: url(img/img2.jpeg);
-}
-
-.item3 {
-  background-color: #e05959;
-  background-image: url(img/img3.jpeg);
-}
-
-.item4 {
-  background-color: #bd1b1b;
-  background-image: url(img/img4.jpeg);
-}
-
-.item5 {
-  background-color: #d41e1e;
-  background-image: url(img/img5.jpeg);
-}
-
-.item6 {
-  background-color: #e12a2a;
-  background-image: url(img/img6.jpeg);
-}
-
-.item7 {
-  background-color: #eb5a5a;
-  background-image: url(img/img7.jpeg);
-  filter: hue-rotate(200deg);
-}
-
-.item8 {
-  background-color: #ed7171;
-  background-image: url(img/img8.jpeg);
-  filter: hue-rotate(200deg);
-}
-
-.item9 {
-  background-color: #f08787;
-  background-image: url(img/img9.jpeg);
-  filter: hue-rotate(200deg);
 }
 
 /*# sourceMappingURL=estilos.css.map */
