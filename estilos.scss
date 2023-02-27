@@ -172,29 +172,56 @@ h4{
 }
 
 .galeria {
+    background-image:url(img/model-car-470644_1280.jpeg);
+    .item{
+        border: 1px solid red;}
+
+
+    h5 {
+        text-align: center;
+        font-family: $font1;
+        text-transform: capitalize;
+        color: $color2;
+
+    }
+
+    .imagen {
+        margin-bottom: 15px;
+        margin-top: 20px; 
+        
+    }
 
     p { 
         font-family: $font1;
+        text-align: center;
+        color: $color2;
     }
     a{
         text-decoration: none;
         color: $color2;
         background-color:$color1;
-        padding: 3px;
+        padding: 5px;
         border-radius: 5px;
         text-transform: capitalize;
+        margin-left: 40%;
+        
+        padding: 10px;
     }
     a:hover {
         color: $color3;
         text-decoration: none;
         border: 2px solid red;
     }
+    
 }
 
 .contacto {
     background-image: linear-gradient(to right,rgb(212, 53, 53), rgb(239, 41, 81));
     font-family: $font1;
     color: $color2;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
     a{
         text-decoration: none;
         color: $color2;
@@ -241,17 +268,4 @@ footer {
     font-size: 30px;
     text-align: center;
     line-height: 40px;
-}
-
-.item{
-    border: 1px solid red;
-    background-image: url(img/toymanonene.jpeg);
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.item:hover{
-    transition: all 0.9s;
-    background-size: 125%;
 }

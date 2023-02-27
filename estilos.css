@@ -153,16 +153,36 @@ h4 {
   border: 5px solid rgb(43, 43, 191);
 }
 
+.galeria {
+  background-image: url(img/model-car-470644_1280.jpeg);
+}
+.galeria .item {
+  border: 1px solid red;
+}
+.galeria h5 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+  color: whitesmoke;
+}
+.galeria .imagen {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
 .galeria p {
   font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: whitesmoke;
 }
 .galeria a {
   text-decoration: none;
   color: whitesmoke;
   background-color: rgb(212, 53, 53);
-  padding: 3px;
+  padding: 5px;
   border-radius: 5px;
   text-transform: capitalize;
+  margin-left: 40%;
+  padding: 10px;
 }
 .galeria a:hover {
   color: rgb(49, 46, 46);
@@ -174,6 +194,8 @@ h4 {
   background-image: linear-gradient(to right, rgb(212, 53, 53), rgb(239, 41, 81));
   font-family: "Oswald", sans-serif;
   color: whitesmoke;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .contacto a {
   text-decoration: none;
@@ -217,19 +239,6 @@ footer i {
   font-size: 30px;
   text-align: center;
   line-height: 40px;
-}
-
-.item {
-  border: 1px solid red;
-  background-image: url(img/toymanonene.jpeg);
-  background-size: 85%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.item:hover {
-  transition: all 0.9s;
-  background-size: 125%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
