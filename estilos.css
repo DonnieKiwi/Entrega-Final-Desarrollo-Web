@@ -156,9 +156,6 @@ h4 {
 .galeria {
   background-image: url(img/model-car-470644_1280.jpeg);
 }
-.galeria .item {
-  border: 1px solid red;
-}
 .galeria h5 {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -196,6 +193,7 @@ h4 {
   color: whitesmoke;
   padding-left: 20px;
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 .contacto a {
   text-decoration: none;
