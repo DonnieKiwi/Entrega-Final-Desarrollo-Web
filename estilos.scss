@@ -84,11 +84,11 @@ $color3: rgb(49, 46, 46);
 }
 
 .carousel-item {
-    height: 400px;
+    height: 550px;
 
     .carousel-caption{
         font-family: $font1;
-        color: black;
+        color: $color2;
     
         h3{
             text-transform: capitalize;
@@ -114,12 +114,12 @@ h2 {
     background-color: $color1;
     background-image: linear-gradient(to right,rgb(212, 53, 53), rgb(239, 41, 81));
     color: $color2;
-    text-transform: capitalize;
     font-family: $font1;
     padding: 20PX;
 
     h3{
         text-align: center;
+        text-transform: capitalize;
     }
 
     a{
@@ -160,7 +160,7 @@ p::selection{
     background-image: url(img/chess.jpeg);
 }
 .img3{ 
-    background-image: url(img/legofondo.jpeg);
+    background-image: url(img/minion-972908_1280.jpeg);
 }
 
 h4{
@@ -188,6 +188,26 @@ h4{
         color: $color3;
         text-decoration: none;
         border: 2px solid red;
+    }
+}
+
+.contacto {
+    background-image: linear-gradient(to right,rgb(212, 53, 53), rgb(239, 41, 81));
+    font-family: $font1;
+    color: $color2;
+    a{
+        text-decoration: none;
+        color: $color2;
+        background-color:$color3;
+        border-radius: 5px;
+        border: 2px solid $color2 ;
+        text-transform: capitalize;
+    }
+    a:hover {
+        color: $color3;
+        text-decoration: none;
+        border: 2px solid $color3;
+        background-color: red;
     }
 }
 

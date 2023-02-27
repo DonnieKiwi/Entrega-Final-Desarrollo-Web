@@ -52,27 +52,101 @@
     <!-- navbar fin -->
 
 
-    <!-- inicia formulario -->
+<!--Section: Contact v.2-->
+<section class="contacto mb-4">
 
-    <form action="/action_page.php">
-        <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" class="form-control" placeholder="Enter email" id="email">
-        </div>
-        <div class="form-group">
-        <label for="pwd">Consulta:</label>
-        <input type="" class="form-control" placeholder="Escribinos y te ayudamos a buscar el mejor juguete" id="pwd">
-        </div>
-        <div class="form-group form-check">
-        <label class="form-check-label">
-        <input class="form-check-input" type="checkbox"> Remember me
-        </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <!--Section titulo-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contacto</h2>
+    <!--Section descripcion-->
+    <p class="text-center w-responsive mx-auto mb-5">Tenes alguna pregunta? No dudes en contactarte con nosotros, te responderemos a la brevedad</p>
 
-    
-    <!-- finaliza formulario -->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Mail</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Tu mensaje</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Belgrano453, Bernal, Buenos Aires</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 54 1145680972</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contactanos@gurilandia.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
 
     <!-- footer inicia -->
     <footer class="container-fliud">

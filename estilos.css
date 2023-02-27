@@ -71,11 +71,11 @@
 }
 
 .carousel-item {
-  height: 400px;
+  height: 550px;
 }
 .carousel-item .carousel-caption {
   font-family: "Oswald", sans-serif;
-  color: black;
+  color: whitesmoke;
 }
 .carousel-item .carousel-caption h3 {
   text-transform: capitalize;
@@ -98,12 +98,12 @@ h2 {
   background-color: rgb(212, 53, 53);
   background-image: linear-gradient(to right, rgb(212, 53, 53), rgb(239, 41, 81));
   color: whitesmoke;
-  text-transform: capitalize;
   font-family: "Oswald", sans-serif;
   padding: 20PX;
 }
 .titulo-juego h3 {
   text-align: center;
+  text-transform: capitalize;
 }
 .titulo-juego a {
   color: whitesmoke;
@@ -143,7 +143,7 @@ p::selection {
 }
 
 .img3 {
-  background-image: url(img/legofondo.jpeg);
+  background-image: url(img/minion-972908_1280.jpeg);
 }
 
 h4 {
@@ -168,6 +168,26 @@ h4 {
   color: rgb(49, 46, 46);
   text-decoration: none;
   border: 2px solid red;
+}
+
+.contacto {
+  background-image: linear-gradient(to right, rgb(212, 53, 53), rgb(239, 41, 81));
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke;
+}
+.contacto a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: rgb(49, 46, 46);
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  text-transform: capitalize;
+}
+.contacto a:hover {
+  color: rgb(49, 46, 46);
+  text-decoration: none;
+  border: 2px solid rgb(49, 46, 46);
+  background-color: red;
 }
 
 footer {
